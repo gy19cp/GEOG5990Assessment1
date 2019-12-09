@@ -1,5 +1,6 @@
 # GEOG5990 Assessment 1
 Programming for Geographical Information Analysts: Core Skills
+
 [gy19cp.github.io](https://gy19cp.github.io/index.html)
 
 ## Model Summary
@@ -15,7 +16,7 @@ These files download once selected. The in.txt file opens in the same tab so it 
 
 ## Model Instructions 
 
-**Step 1 -** Open Spyder (Anaconda 3). If you have not got this downloaded, it can be installed through the Anaconda Distribution [here](https://www.anaconda.com/distribution/). My Model code works with Python 3.7. Ensure when going through the installation process that you download ‘Spyder’. 
+**Step 1 -** Open Spyder (Anaconda 3). If you have not got this downloaded, it can be installed through the Anaconda Distribution [here](https://www.anaconda.com/distribution/). All code works with Python 3.7. Ensure when going through the installation process that you download ‘Spyder’. 
 
 ![Spyder Screenshot](SpyderScreenshot.jpg "Initiating Spyder")
 
