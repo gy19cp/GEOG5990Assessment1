@@ -1,6 +1,8 @@
 # GEOG5990 Assessment 1
 Programming for Geographical Information Analysts: Core Skills
 
+Student ID: 201376715
+
 Website: [gy19cp.github.io](https://gy19cp.github.io/index.html)
 
 ## Model Summary
