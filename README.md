@@ -1,7 +1,7 @@
 # GEOG5990 Assessment 1
 Programming for Geographical Information Analysts: Core Skills
 
-[gy19cp.github.io](https://gy19cp.github.io/index.html)
+Website: [gy19cp.github.io](https://gy19cp.github.io/index.html)
 
 ## Model Summary
 
@@ -12,6 +12,7 @@ This animated agent-based model uses Spyder (Anaconda 3). The model code interac
 -	[Developer Model](https://gy19cp.github.io/developermodel.py) (detailed explanatory comments, testing and debugging) 
 -	[Agent Framework](https://gy19cp.github.io/agentframework.py)
 -	[in.txt]( https://gy19cp.github.io/in.txt)
+
 These files download once selected. The in.txt file opens in the same tab so it is advised to open, save the in.txt file, before selecting the back command to return to this page.
 
 ## Model Instructions 
@@ -20,7 +21,7 @@ These files download once selected. The in.txt file opens in the same tab so it 
 
 ![Spyder Screenshot](SpyderScreenshot.jpg "Initiating Spyder")
 
-**Step 2 -** Download the necessary files by clicking on the following hyperlinks - [User Model](http://gy19cp.github.io/model.py), [Developer Model](http://gy19cp.github.io/model.py), [Agent Framework](http://gy19cp.github.io/model.py) and [in.txt](https://gy19cp.github.io/in.txt). All these files should be downloaded to the computers ‘Downloads’ folder. The User Model contains basic comments for ease for the user. The Developer Model version contains explanatory comments, testing, and debugging. 
+**Step 2 -** Download the necessary files by clicking on the following hyperlinks - [User Model](http://gy19cp.github.io/usermodel.py), [Developer Model](http://gy19cp.github.io/developermodel.py), [Agent Framework](http://gy19cp.github.io/agentframework.py) and [in.txt](https://gy19cp.github.io/in.txt). All these files should be downloaded to the computers ‘Downloads’ folder. The User Model contains basic comments for ease for the user. The Developer Model version contains explanatory comments, testing, and debugging. 
 
 **Alternative Step 2 -** Complete the original Step 2 or this, not both. Alternatively you can select this [Repository](https://github.com/gy19cp/GEOG5990Assessment1) hyperlink, which will take you directly to the Assessment 1 Repository within the GitHub website. Once in the Repository, select the green ‘Clone or download’ button (on the right side) and ‘Download Zip’. The files downloaded to the ‘Downloads’ folder this way will need to be ‘extracted’ before they appear as individual files as shown below.  
 
