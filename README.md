@@ -39,6 +39,6 @@ These files download once selected. The in.txt file opens in the same tab so it 
  
 ![RunModelScreenshot](RunModelScreenshot.jpg "Run Model")
  
-When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. Where there are squares of differing darkness and no sheep around it is likely a Fox has ‘eaten’ a ‘Sheep’. This model will run until a specific number of steps (‘num_of_iterations’) has been completed. 
+When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. When a Sheep is killed by a Fox, the coordinates of where it took place is printed in the IPython Console. Where grass has been eaten, dark squares/pixels are shown. The darker the square/pixels, the more the grass has been grazed by multiple Sheep. This model will run until the Agent Food Store Capacity is met or until a specific number of steps (‘num_of_iterations’) has been completed. 
 
 More details on the **GNU General Public License v3.0** associated with this model can be found [here](https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE).
