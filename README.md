@@ -5,7 +5,7 @@ Student ID: 201376715
 
 Website: [gy19cp.github.io](https://gy19cp.github.io/index.html)
 
-This animated agent-based model uses Sheep and Foxes within an raster grid environment. Sheep move, eat, share food with neighbouring Sheep and are unfortunately killed by Foxes. Foxes move and eat Sheep up to a specific food capacity. For a more detailed Model Summary click [here](https://gy19cp.github.io/model1summary.html) first.
+This animated agent-based model uses Sheep and Foxes within an raster grid environment. Sheep move, eat, share food with neighbouring Sheep and are unfortunately killed by Foxes. Foxes move and eat Sheep up to a specific food capacity. For a more detailed Model Summary click [here](https://gy19cp.github.io/model1summary.html) to be taken to the Webpage Model 1 in depth Summary.
 
 ### Model Files List
 -	[Developer Model*](https://gy19cp.github.io/developermodel.py) - Recommended Model to download and run as it contains detailed explanatory comments, testing and debugging. 
