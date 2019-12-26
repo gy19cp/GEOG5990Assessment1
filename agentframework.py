@@ -15,7 +15,7 @@ usermodel.py contains basic comments.
 
 """
 
-# Libraries:
+# Libraries imported:
 import random
 
 # Constructing Agent (Sheep) class.
