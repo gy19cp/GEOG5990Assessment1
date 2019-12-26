@@ -41,7 +41,7 @@ These files download once selected. The in.txt file opens in the same tab so it 
 ![RunModelScreenshot](RunModelScreenshot.jpg "Run Model")
  
 ## Model Expectations 
-When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. When a Sheep is killed by a Fox, the coordinates of where it took place is printed in the IPython Console. Where grass has been eaten, dark squares/pixels are shown. The darker the square/pixels, the more the grass has been grazed by multiple Sheep. This model will run until the Agent (Foxes) Food Store Capacity is met or until a specific number of steps (‘num_of_iterations’) has been completed. 
+When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. When a Sheep is killed by a Fox, the coordinates of where it took place is printed in the IPython Console. Where grass has been eaten, dark squares/pixels are shown. The darker the square/pixels, the more the grass has been grazed by multiple Sheep. This model will run until the Agents (Sheep) Food Store Capacity is met or until a specific number of steps (‘num_of_iterations’) has been completed. 
 
 ## Future Developments
 - Other predators could be added (e.g. Wolves).
