@@ -43,6 +43,10 @@ These files download once selected. The in.txt file opens in the same tab so it 
 ## Model Expectations 
 When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. When a Sheep is killed by a Fox, the coordinates of where it took place is printed in the IPython Console. Where grass has been eaten, dark squares/pixels are shown. The darker the square/pixels, the more the grass has been grazed by multiple Sheep. This model will run until the Agents (Sheep) Food Store Capacity is met or until a specific number of steps (‘num_of_iterations’) has been completed. 
 
+## Potential Issues
+- A strong internet connection is required as the web scraped html file for the Foxes movement will not work without an internet connection. The HTTPConnectionPool error will show if the internet is not connected.
+- It is recommended to open the Model on a Windows Operating System. However, when doing so a pop up box entitled 'Figure' will appear alongside the 'Model' box. This is a preknown issue that occurs with Windows. This Figure box is not used. To close the Model fully before potentially rerunning the Model again, both the Model and the Figure box need to be closed and the red square in the IPython console selected (if it is not already greyed out).
+
 ## Future Developments
 - Other predators could be added (e.g. Wolves).
 - A survival of the fittest/best adapted Sheep could take place using a range of possible functions including 'wolf_hunt', 'chase' and 'sheep_fitness' (after a number of iterations the Sheep would be exhausted and possibly be eaten).
