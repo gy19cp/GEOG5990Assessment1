@@ -57,6 +57,7 @@ Estimated Model Running Time is..... Timing may vary slightly with different com
 
 ## Future Developments Roadmap
 ![DevelopmentsRoadmap](DevelopmentsRoadmap.jpg "DevelopmentsRoadmap")
+![FutureDevelopmentsRoadmap](FutureDevelopmentsRoadmap.jpg "DevelopmentsRoadmap")
 
 ## Final Points
 I do not condon any form of animal cruelty. This model was only to represent skills developed following the [Programming for Geographical Information Analysts: Core Skills module](https://www.geog.leeds.ac.uk/courses/computing/study/core-python/) as part of an MSc GIS from the University of Leeds. 
