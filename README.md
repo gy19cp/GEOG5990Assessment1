@@ -55,7 +55,7 @@ Estimated Model Running Time is..... Timing may vary slightly with different com
 - Throughout the Agent Framework and Model, certain text is printed or 'returned' to show a certain action has occurred. For instance, 'Foxes Food Store Capacity is met' is printed. 
 - Also 'if' and 'else' statements are used to cover if one outcome does not occur then another outcome will happen instead. For instance, the Sheep movement is random. If the number generated is > 0.5, both the xy coordinates increase by 1 and the Sheep moves North or East. If the number generated is < 0.5, both xy coordinates decrease by 1 and the Sheep moves  South or West.
 
-## Model Future Developments Roadmap 2020
+## Future Developments Roadmap 2020
 ![DevelopmentsRoadmap](DevelopmentsRoadmap.jpg "DevelopmentsRoadmap")
 
 ## Final Points
