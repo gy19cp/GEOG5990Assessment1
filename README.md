@@ -45,9 +45,15 @@ These files download once selected. The in.txt file opens in the same tab so it 
 ## Model Expectations 
 When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. When a Sheep is killed by a Fox, the coordinates of where it took place is printed in the IPython Console. Where grass has been eaten, dark squares/pixels are shown. The darker the square/pixels, the more the grass has been grazed by multiple Sheep. This model will run until the Agents (Foxes) Food Store Capacity is met or until a specific number of steps (‘num_of_iterations’) has been completed. 
 
+Estimated Model Running Time is..... Timing may vary slightly with different computer processing speeds and how many agents are chosen to be within the Model. Here the optimum number of 5 Foxes and 15 Sheep were ran, these best show the model capabilities. 
+
 ## Potential Known Issues
 - A strong internet connection is required as the web scraped html file for the Foxes movement will not work without an internet connection. The HTTPConnectionPool error will show if the internet is not connected.
 - It is recommended to open the Model on a Windows Operating System. However, when doing so a pop up box entitled 'Figure' will appear alongside the 'Model' box. This is a preknown issue that occurs with Windows. This Figure box is not used. To close the Model fully before potentially rerunning the Model again, both the Model and the Figure box need to be closed and the red square in the IPython console selected (if it is not already greyed out).
+
+## Testing Completed
+- Throughout the Agent Framework and Model, certain text is printed or 'returned' to show a certain action has occurred. For instance, 'Foxes Food Store Capacity is met' is printed. 
+- Also 'if' and 'else' statements are used to cover if one outcome does not occur then another outcome will happen instead. For instance, the Sheep movement is random. If the number generated is > 0.5, both the xy coordinates increase by 1 and the Sheep moves North or East. If the number generated is < 0.5, both xy coordinates decrease by 1 and the Sheep moves  South or West.
 
 ## Future Developments Roadmap
 - Other predators could be added (e.g. Wolves).
