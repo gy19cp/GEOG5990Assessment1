@@ -93,8 +93,8 @@ def distance_between(agents_row_a, agents_row_b):
     return ((agents_row_a.x - agents_row_b.x)**2 + (agents_row_a.y - agents_row_b.y)**2)**0.5
     
 def update(frame_number):
-    """The update function plots the environment and enables the actions for the animation. 
-        Agents (Sheep) can move, eat and share food with their neighbours and get killed by the Foxes."""
+    """The update function plots the environment and enables the actions for the animation. Agents (Sheep) can move, eat and share
+    food with their neighbours and get killed by the Foxes."""
     fig.clear()   
     global carry_on
     global sheepkilled
