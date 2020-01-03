@@ -58,7 +58,7 @@ num_of_agents = 100
 num_of_foxes = 10
 neighbourhood = 20  # Distance Sheep can sense the Foxes.
 foxes_neighbourhood = 10 # Distance Foxes can sense the Sheep. This is lower than for Sheep as Foxes have a natural heightened awareness.
-sheepkilled = 0 
+sheepkilled = 0 # Number of Sheep killed by Foxes, starts at 0.
 
 
 # Methods:
@@ -119,7 +119,7 @@ def update(frame_number):
                 sheepkilled = sheepkilled + 1 # When Sheep are killed, the 'sheepkilled' text box increases by the number killed.
         matplotlib.pyplot.scatter(foxes[i].x, foxes[i].y, color= "orange")        
         
-        if agents[i].store > 1000: # If Agent (Foxes) food store capacity is met, the model will stop before num_of_iterations stops the model.
+        if agents[i].store > 1000: # If Agents (Foxes) food store capacity is met, the model will stop before num_of_iterations reached.
             carry_on = False # A Boolean value; the animation stops once the condition (Food Store Capacity) is met.
             print ('Foxes Food Store Capacity is met.')
 
@@ -159,9 +159,11 @@ model_menu.add_command(label="Run Model", command=run)
 model_menu.add_command(label="Close Model", command=close) 
 
 # Add Sliders.
-sheepslider = tkinter.Scale(root, bd=5, from_=50, label= "Step 1: Choose the Number of Sheep.", length= 200, orient= 'horizontal', resolution= 1, to= 100)
-sheepslider.pack(fill= 'x') # Optimum Sheep is 70 to see full effect of animation.
-foxesslider = tkinter.Scale(root, bd=5, from_=5, label= "Step 2: Choose the Number of Foxes.", length= 200, orient= 'horizontal', resolution= 1, to= 15)
+sheepslider = tkinter.Scale(root, bd=5, from_=50, label= "Step 1: Choose the Number of Sheep.", length= 200, orient= 'horizontal', 
+                            resolution= 1, to= 100)
+sheepslider.pack(fill= 'x') # Optimum Sheep is 75 to see full effect of animation.
+foxesslider = tkinter.Scale(root, bd=5, from_=5, label= "Step 2: Choose the Number of Foxes.", length= 200, orient= 'horizontal', 
+                            resolution= 1, to= 15)
 foxesslider.pack(fill= 'x') # Optimum Foxes is 10 to see full effect of animation.
 
 num_of_agents = sheepslider.get()
