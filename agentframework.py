@@ -16,7 +16,7 @@ import random
 class Agent():
     
     def __init__(self,environment,agents, foxes):
-        """Initiate class Agents (Sheep) and randomly generate the xy coordinates, environment and food store. All inputs are from model.py"""
+        """Initiate class Agents (Sheep) and randomly generate the xy coordinates, environment and food store. Inputs are from model.py"""
         self.x = random.randint(0,99) # Randomly generated.
         self.y = random.randint(0,99) # Randomly generated.
         self.environment = environment
@@ -35,9 +35,8 @@ class Agent():
         return (((self.x - agent.x) **2) + ((self.y - agent.y)**2))**0.5
     
     def eat(self): 
-        """Agents (Sheep) eat grass within the environment, once eaten the 
-        patch is darker and pixels are reduced."""
-        if self.environment[self.y][self.x] > 10: # If grass patch has greater than 10 units available, it can be eaten. Prevents overgrazing.
+        """Agents (Sheep) eat grass within the environment, once eaten the patch is darker and pixels are reduced."""
+        if self.environment[self.y][self.x] > 10: # If patch has more than 10 units available, it can be eaten. Prevents overgrazing.
             self.environment[self.y][self.x] -= 10 # Eat 10 units of grass.
             self.store += 10 # 10 units of grass to Sheep food store.  
       
@@ -51,13 +50,12 @@ class Agent():
             average = sum/2
             self.store = average 
             self.agents[i].store = average
-            #print ("Sharing" + str(distance) + " " + str(average)) # Prints distance between Sheep that are sharing food. Print to check it works correctly.               
+            #print ("Sharing" + str(distance) + " " + str(average)) # Prints distance between Sheep that are sharing food.               
                
     def move(self):
-        """Sheep move randomly. If the random number generated is greater than 
-        0.5, the xy coordinates increase by 1 and the Sheep moves either 
-        North or East. If the number generated is less than 0.5, the xy 
-        coordinates decrease by 1 and the Sheep moves either South or West."""        
+        """Sheep move randomly. If the random number generated is greater than 0.5, the xy coordinates increase by 1 and the Sheep 
+        moves either North or East. If the number generated is less than 0.5, the xy coordinates decrease by 1 and the Sheep moves
+        either South or West."""        
         if random.random() < 0.5:
             self.y = (self.y + 1) 
         else: 
@@ -80,9 +78,8 @@ class Agent():
 class Foxes(): 
     
     def __init__(self,environment,agents,foxes, y, x):
-        """Initiate class Foxes and set up the xy coordinates. Environment and 
-        Agents (Sheep) can continue to be used from previous code above (within
-        the Agent Framework) and from the model."""
+        """Initiate class Foxes and set up the xy coordinates. Environment and Agents (Sheep) can continue to be used from previous
+        code above (within the Agent Framework) and from the model."""
         if (x == None): # If no x value is found from the html file, a random x coordinate is assigned.
             self.x = random.randint(0,99)
         else:
