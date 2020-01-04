@@ -7,7 +7,7 @@ Website: [gy19cp.github.io](https://gy19cp.github.io/index.html)
 
 A concise, briefer Model Summary can be found by selecting the [Model 1](https://gy19cp.github.io/model1summary.html) webpage on the website.
 
-This animated agent-based model uses Sheep and Foxes within a raster grid environment. Sheep move, eat, share food with neighbouring Sheep and are unfortunately killed by Foxes. Foxes move and eat Sheep up to a specific food capacity. 
+This animated agent-based model uses Sheep and Foxes within a raster grid environment. Sheep move, eat, share food with neighbouring Sheep and are killed by Foxes. Foxes move and eat Sheep up to a specific food capacity. 
 
 ### Model Files/Directories List
 -	[Model*](https://gy19cp.github.io/model.py) - Model to download and run as it contains detailed explanatory comments, testing and debugging. 
