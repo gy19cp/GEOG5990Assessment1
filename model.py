@@ -5,7 +5,7 @@
 University of Leeds
 ___________________
 
-agentframework.py file is 'run' before model.py file. 
+agentframework.py file is run before the before model.py file. 
 
 """
 
@@ -26,7 +26,7 @@ import matplotlib.animation
 import csv
 
 
-# Importing xy data from a html file.
+# Importing xy data from the html file.
 r = requests.get('http://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part9/data.html')
 content = r.text
 soup = bs4.BeautifulSoup(content, 'html.parser')
@@ -56,15 +56,15 @@ foxes = [] # List of Foxes.
 num_of_iterations = 100
 num_of_agents = 100
 num_of_foxes = 10
-neighbourhood = 20  # Distance Sheep can sense the Foxes.
-foxes_neighbourhood = 10 # Distance Foxes can sense the Sheep. This is lower than for Sheep as Foxes have a natural heightened awareness.
+neighbourhood = 10  # Distance Sheep can sense the Foxes.
+foxes_neighbourhood = 20 # Foxes sense Sheep a greater distance away as Foxes have a stronger predatory instinct than Sheep.
 sheepkilled = 0 # Number of Sheep killed by Foxes, starts at 0.
 
 
 # Methods:
 # Constructs the GUI slider.
 def setup_agents():
-    """The number of Sheep and Foxes in the environment are chosen from interacting with a slider."""
+    """The number of Sheep and Foxes in the environment are chosen by operating the slider."""
     global num_of_agents # Global variable defines number of Sheep as selected using the slider.
     global num_of_foxes # Global variable defines number of Foxes as selected using the slider. 
     num_of_agents = sheepslider.get()
@@ -93,8 +93,8 @@ def distance_between(agents_row_a, agents_row_b):
     return ((agents_row_a.x - agents_row_b.x)**2 + (agents_row_a.y - agents_row_b.y)**2)**0.5
     
 def update(frame_number):
-    """The update function plots the environment and enables the actions for the animation. Agents (Sheep) can move, eat and share
-    food with their neighbours and get killed by the Foxes."""
+    """The update function plots the environment and enables the actions for the animation. 
+        Agents (Sheep) can move, eat and share food with their neighbours and get killed by the Foxes."""
     fig.clear()   
     global carry_on
     global sheepkilled
@@ -119,7 +119,7 @@ def update(frame_number):
                 sheepkilled = sheepkilled + 1 # When Sheep are killed, the 'sheepkilled' text box increases by the number killed.
         matplotlib.pyplot.scatter(foxes[i].x, foxes[i].y, color= "orange")        
         
-        if agents[i].store > 1000: # If Agents (Foxes) food store capacity is met, the model will stop before num_of_iterations reached.
+        if agents[i].store > 1000: # If Agent (Foxes) food store capacity is met, the model will stop before num_of_iterations stops the model.
             carry_on = False # A Boolean value; the animation stops once the condition (Food Store Capacity) is met.
             print ('Foxes Food Store Capacity is met.')
 
@@ -158,24 +158,25 @@ menu_bar.add_cascade(label="Menu", menu=model_menu)
 model_menu.add_command(label="Run Model", command=run) 
 model_menu.add_command(label="Close Model", command=close) 
 
-# Add Sliders.
-sheepslider = tkinter.Scale(root, bd=5, from_=50, label= "Step 1: Choose the Number of Sheep.", length= 200, orient= 'horizontal', 
-                            resolution= 1, to= 100)
+# Adds Sliders to GUI.
+sheepslider = tkinter.Scale(root, bd=5, from_=50, label= "Step A: Choose the Number of Sheep.", length= 200, orient= 'horizontal', resolution= 1, to= 100)
 sheepslider.pack(fill= 'x') # Optimum Sheep is 75 to see full effect of animation.
-foxesslider = tkinter.Scale(root, bd=5, from_=5, label= "Step 2: Choose the Number of Foxes.", length= 200, orient= 'horizontal', 
-                            resolution= 1, to= 15)
+foxesslider = tkinter.Scale(root, bd=5, from_=5, label= "Step B: Choose the Number of Foxes.", length= 200, orient= 'horizontal', resolution= 1, to= 15)
 foxesslider.pack(fill= 'x') # Optimum Foxes is 10 to see full effect of animation.
 
 num_of_agents = sheepslider.get()
 num_of_foxes = foxesslider.get()
 
-# Add Buttons.
-butt1=tkinter.Button(root, command=setup_agents, text= "Step 3: Click to set up the chosen Sheep and Foxes.")
-butt1.pack(fill='x')
-butt2=tkinter.Button(root, command=run, text="Step 4: Run Model.")
-butt2.pack(fill='x')
-butt3=tkinter.Button(root, command=close, text="Step 5: Close the Model.")
-butt3.pack(fill='x')
+# Adds Buttons to GUI.
+button1=tkinter.Button(root, command=setup_agents, text= "Step C: Click to set up the chosen Sheep and Foxes.")
+button1.pack(fill='x')
+button2=tkinter.Button(root, command=run, text="Step D: Run Model.")
+button2.pack(fill='x')
+button3=tkinter.Button(root, command=close, text="Step E: Close the Model.")
+button3.pack(fill='x')
 
 # Sets GUI waiting for events.
 tkinter.mainloop()
+
+
+
