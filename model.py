@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 @author: gy19cp
+Student ID: 201376715
 
 University of Leeds
 ___________________
 
-agentframework.py file is run before the before model.py file. 
+    Assessment 1
+___________________
+
+agentframework.py file is run before the model.py file. 
 
 """
 
@@ -26,7 +30,7 @@ import matplotlib.animation
 import csv
 
 
-# Importing xy data from the html file.
+# Import xy data from the html file.
 r = requests.get('http://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part9/data.html')
 content = r.text
 soup = bs4.BeautifulSoup(content, 'html.parser')
@@ -39,11 +43,14 @@ td_xs = soup.find_all(attrs={"class" : "x"}) # x values from the html file.
 f = open('in.txt', newline='')
 reader = csv.reader (f, quoting = csv.QUOTE_NONNUMERIC) 
 environment = [] 
+
+# Arrange the Environment csv file into rows.
 for row in reader: 
     rowlist = [] 
     for value in row: 
         rowlist.append(value)  
-    environment.append(rowlist) 
+    environment.append(rowlist)
+    #print(type(environment), len(environment)) # Print to ensure environment is working. 
 f.close() # Close document to ensure efficient memory usage. Values are appended to the environment so document is not needed. 
 
 # Animation Window Guidelines:
@@ -58,7 +65,7 @@ num_of_agents = 100
 num_of_foxes = 10
 neighbourhood = 10  # Distance Sheep can sense the Foxes.
 foxes_neighbourhood = 20 # Foxes sense Sheep a greater distance away as Foxes have a stronger predatory instinct than Sheep.
-sheepkilled = 0 # Number of Sheep killed by Foxes, starts at 0.
+sheepkilled = 0 # Number of Sheep killed by Foxes starts at 0.
 
 
 # Methods:
@@ -79,7 +86,7 @@ for i in range(num_of_agents):
 
 # Initialise Foxes Loop against html-derived coordinates.
 for i in range(num_of_foxes):
-    y = int(td_ys[i].text) # Foxes are at html-derived, specific coordinates as Foxes naturally calculate their moves when killing prey.
+    y = int(td_ys[i].text) # Foxes move according to the xy coordinates from the html file.
     x = int(td_xs[i].text)
     foxes.append(agentframework.Foxes(environment, agents, foxes, x, y))
 #print('Foxes:',foxes[i]) # Prints to ensure Foxes xy coordinates are being generated.
@@ -93,11 +100,12 @@ def distance_between(agents_row_a, agents_row_b):
     return ((agents_row_a.x - agents_row_b.x)**2 + (agents_row_a.y - agents_row_b.y)**2)**0.5
     
 def update(frame_number):
-    """The update function plots the environment and enables the actions for the animation. 
-        Agents (Sheep) can move, eat and share food with their neighbours and get killed by the Foxes."""
+    """The update function plots the environment and enables the actions for the animation. The actions are derived from the 
+    agentframework.py. Agents (Sheep) can move, eat and share food with their neighbours and get killed by the Foxes. Foxes move 
+    and eat the Sheep. The number of Sheep killed is displayed in the model text box that runs in real time above the model."""
     fig.clear()   
-    global carry_on
-    global sheepkilled
+    global carry_on # Global variable ensures if the Foxes and Sheep specifications above work the model carries on.
+    global sheepkilled # Global variable ensures number of Sheep killed is able to be viewed and updates as the model progresses. 
     matplotlib.pyplot.xlim(0, 100) # Determines the x coordinates for the environment grid.
     matplotlib.pyplot.ylim(0, 100) # Determines the y coordinates for the environment grid.
     matplotlib.pyplot.imshow(environment)
@@ -119,14 +127,14 @@ def update(frame_number):
                 sheepkilled = sheepkilled + 1 # When Sheep are killed, the 'sheepkilled' text box increases by the number killed.
         matplotlib.pyplot.scatter(foxes[i].x, foxes[i].y, color= "orange")        
         
-        if agents[i].store > 1000: # If Agent (Foxes) food store capacity is met, the model will stop.
+        if agents[i].store > 1000: # If Agent (Foxes) food store capacity is met, the model will stop before stopping for num_of_iterations.
             carry_on = False # A Boolean value; the animation stops once the condition (Food Store Capacity) is met.
             print ('Foxes Food Store Capacity is met.')
 
 def gen_function(b = [0]):
-    """The generate function loops the animation until num_of_iterations is met."""
+    """The generate function loops the animation until num_of_iterations or Foxes Food Store Capacity is met."""
     a = 0
-    while (a < num_of_iterations):
+    while (a < num_of_iterations) & (carry_on): # Iterations/Food Store Capacity to met defined at the start of the model.
         yield a	# Returns control and waits for next call.
         a = a + 1
     print('Stopping Condition met. Iteration Number:', a)    
@@ -179,6 +187,3 @@ button3.pack(fill='x')
 
 # Sets GUI waiting for events.
 tkinter.mainloop()
-
-
-
