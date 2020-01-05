@@ -20,7 +20,8 @@ import random
 class Agent():
     
     def __init__(self,environment,agents, foxes):
-        """Initiate class Agents (Sheep) and randomly generate the xy coordinates, environment and food store. All inputs are from model.py"""
+        """Initiate class Agents (Sheep) and randomly generate the xy coordinates, environment and food store. 
+        All inputs are from model.py"""
         self.x = random.randint(0,99) # Randomly generated.
         self.y = random.randint(0,99) # Randomly generated.
         self.environment = environment
