@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 @author: gy19cp
+Student ID: 201376715
 
 University of Leeds
 ___________________
 
-agentframework.py file is run before the model.py file.
+    Assessment 1
+___________________
+
+agentframework.py file is run before the model.py file. 
 
 """
 
@@ -127,3 +131,4 @@ class Foxes():
         increases by 1."""    
         self.agents.remove(agent)
         self.store += 1       
+    
