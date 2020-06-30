@@ -22,11 +22,11 @@ The __*__ indicates that it is essential to download these files in order to run
 
 **Step 1 -** Open Spyder (Anaconda 3). If you have not got this downloaded, it can be installed through the Anaconda Distribution [here](https://www.anaconda.com/distribution/). All code works with Python 3.7. Ensure when going through the installation process that you download ‘Spyder’. 
 
-![SpyderScreenshot](SpyderScreenshot.jpg "Initiating Spyder")
+![SpyderScreenshot](/images/SpyderScreenshot.jpg "Initiating Spyder")
 
 **Step 2 -** Download the necessary files by clicking on 'Clone' in the top right hand corner of the [Assessment 1](https://github.com/gy19cp/GEOG5990Assessment1) Repository within the GitHub website. Once in the Repository, select the green ‘Clone or Download’ button (on the right hand side) and ‘Download Zip’. Files downloaded to the ‘Downloads’ folder this way will need to be ‘extracted’ before appearing as individual files as shown below. To extract files, right click on the zipped folder and select 'extract all', making sure to choose a suitable location for the files. 
 
-![CloneScreenshot](https://github.com/gy19cp/GEOG5990Assessment1/blob/master/images/CloneScreenshot.jpg "Clone") ![DownloadsScreenshot](DownloadsScreenshot.jpg "Downloads")
+![CloneScreenshot](/images/CloneScreenshot.jpg "Clone") ![DownloadsScreenshot](DownloadsScreenshot.jpg "Downloads")
 
 **Step 3 -** Once downloaded, open Spyder and within it the Agent Framework file and Model file.
 
@@ -38,7 +38,7 @@ The __*__ indicates that it is essential to download these files in order to run
 
 If any problems occur with the Graphical User Interface, a dropdown 'Menu' above the sliders allows the Model to 'Run' and 'Close'. 
  
-![RunModelScreenshot](RunModelScreenshot.jpg "Run Model")
+![RunModelScreenshot](/images/RunModelScreenshot.jpg "Run Model")
  
 ## Model Expectations 
 The number of orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. When Step C button within the Graphical User Interface of the Model is clicked, the number of Sheep and Foxes chosen from the slider is printed in the iPython Console. Then the model is run, Sheep are killed by Foxes and the number in the 'Sheep Killed' text box within the Model increases. 
@@ -57,7 +57,7 @@ Average Model Running Time is 40.45 seconds with on average 46 sheep killed when
 - Statements with 'if' and 'else' are used. If one outcome does not occur then another outcome will happen instead. For instance, the Sheep movement is random. If the number generated is > 0.5, both the xy coordinates increase by 1 and the Sheep moves North or East. If the number generated is < 0.5, both xy coordinates decrease by 1 and the Sheep move South or West.
 
 ## Future Developments Roadmap 2020
-![DevelopmentsRoadmap](DevelopmentsRoadmap.jpg "DevelopmentsRoadmap")
+![DevelopmentsRoadmap](/images/DevelopmentsRoadmap.jpg "DevelopmentsRoadmap")
 
 ## Final Points
 I do not condone any form of animal cruelty. This model was only to represent skills developed following the [Programming for Geographical Information Analysts: Core Skills module](https://www.geog.leeds.ac.uk/courses/computing/study/core-python/) as part of an MSc GIS from the University of Leeds. 
