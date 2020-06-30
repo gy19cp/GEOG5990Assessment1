@@ -26,13 +26,13 @@ The __*__ indicates that it is essential to download these files in order to run
 
 **Step 2 -** Download the necessary files by clicking on 'Clone' in the top right hand corner of the [Assessment 1](https://github.com/gy19cp/GEOG5990Assessment1) Repository within the GitHub website. Once in the Repository, select the green ‘Clone or Download’ button (on the right hand side) and ‘Download Zip’. Files downloaded to the ‘Downloads’ folder this way will need to be ‘extracted’ before appearing as individual files as shown below. To extract files, right click on the zipped folder and select 'extract all', making sure to choose a suitable location for the files. 
 
-![CloneScreenshot](CloneScreenshot.jpg "Clone") ![DownloadsScreenshot](DownloadsScreenshot.jpg "Downloads")
+![CloneScreenshot](https://github.com/gy19cp/GEOG5990Assessment1/blob/master/images/CloneScreenshot.jpg "Clone") ![DownloadsScreenshot](DownloadsScreenshot.jpg "Downloads")
 
 **Step 3 -** Once downloaded, open Spyder and within it the Agent Framework file and Model file.
 
 **Step 4 -** Have the 'agentframework.py' file selected within Spyder and click the green right-pointed arrow to ‘Run’ it.
 
-![AgentFrameworkScreenshot](AgentFrameworkScreenshot.jpg "Agent Framework")
+![AgentFrameworkScreenshot](/images/AgentFrameworkScreenshot.jpg "Agent Framework")
   
 **Step 5 -** Now select the 'model.py' file within Spyder and click ‘Run’ once more. When the Model pops out it contains a Graphical User Interface with 5 clearly marked Steps A to E. This involves choosing the number of Sheep and Foxes, setting up the area for the chosen number of animals, running the model and a choice to close the model early if needed. A text box with number of Sheep Killed is also present.  
 
