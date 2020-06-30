@@ -10,7 +10,7 @@ A concise, briefer Model Summary can be found by selecting the [Model 1](https:/
 This animated agent-based model uses Sheep and Foxes within a raster grid environment. Sheep move, eat, share food with neighbouring Sheep and are killed by Foxes. Foxes move and eat Sheep up to a specific food capacity. 
 
 ### Model Files/Directories List
--	[Model*](https://github.com/gy19cp/GEOG5990Assessment1/model.py) - Model to download and run. It contains detailed explanatory comments, testing and debugging. 
+-	[Model*](https://github.com/gy19cp/GEOG5990Assessment1/blob/master/model.py) - Model to download and run. It contains detailed explanatory comments, testing and debugging. 
 -	[Agent Framework*](https://gy19cp.github.io/agentframework.py) - Code for Agents in the Model.
 -	[in.txt*](https://gy19cp.github.io/in.txt) - Text file that contains the values for the Environment. 
 - [License](https://github.com/gy19cp/GEOG5990Assessment1/blob/master/LICENSE) - GNU General Public License v3.0 agreement for the Repository code.
