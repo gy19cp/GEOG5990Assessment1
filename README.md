@@ -26,7 +26,7 @@ The __*__ indicates that it is essential to download these files in order to run
 
 **Step 2 -** Download the necessary files by clicking on 'Clone' in the top right hand corner of the [Assessment 1](https://github.com/gy19cp/GEOG5990Assessment1) Repository within the GitHub website. Once in the Repository, select the green ‘Clone or Download’ button (on the right hand side) and ‘Download Zip’. Files downloaded to the ‘Downloads’ folder this way will need to be ‘extracted’ before appearing as individual files as shown below. To extract files, right click on the zipped folder and select 'extract all', making sure to choose a suitable location for the files. 
 
-![CloneScreenshot](/images/CloneScreenshot.jpg "Clone") ![DownloadsScreenshot](DownloadsScreenshot.jpg "Downloads")
+![CloneScreenshot](/images/CloneScreenshot.jpg "Clone") ![DownloadsScreenshot](/images/DownloadsScreenshot.jpg "Downloads")
 
 **Step 3 -** Once downloaded, open Spyder and within it the Agent Framework file and Model file.
 
